@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Questioner About Our Relationship<h1>
+        <img src="love_cute.gif" alt="" style="height:200px">
+        <h4 style="#">Do you want to be my little sweetie now and forever?</h4>
+        <div id="By" style="position:absolute; left:64px; top:370px; width:210px;height:210px;">
+        <input type="button" value="YES" onClick="f1()" />
+        </div>
+        <div ID="Bn" style="position:absolute; left:166px; top:370px; width:210px; height:210px;">
+        <input  type="button" value="NO" onClick="f()" />
+        </div>
+</body>
+<script>
+    var Bn = document.getElementById("Bn");
+    flag=1
+    function f1()
+    {
+        alert("Thanks for accepting me, you are really the best and my little cutee <3.")
+    }
+    function f()
+    {
+        console.log("Jalan");
+        console.log(flag);
+        if(flag==1){
+            Bn.style.top="400px";
+            Bn.style.left="300px";
+            flag=2
+        }
+        else if(flag==2){
+            Bn.style.top="400px";
+            Bn.style.left="50px";
+            flag=3
+        }
+        else if(flag==3){
+            Bn.style.top="370px";
+            Bn.style.left="160px";
+            flag=1;
+            alert("Don't force it... you'll miss me more");
+        }
+    }
+</script>
+</html>
